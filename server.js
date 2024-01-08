@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const { CohereClient } = require('cohere-ai');  // Importing CohereClient
 const mongoose = require('mongoose');
-const SaveSummary = require('../backend/model');
+const SaveSummary = require('./model');
 require('dotenv').config();
 
 const cohere = new CohereClient({
